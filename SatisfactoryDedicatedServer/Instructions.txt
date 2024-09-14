@@ -1,0 +1,10 @@
+Happiness Factory One-click Startup (and Guard Server) Code Version 1.0
+Slightly BUG
+
+Unzip the compressed package to the C drive directory
+First start the game download update file.bat
+After the update is completed, there will be an additional GameServers folder in the folder
+Finally start the one-click start server code.bat
+That's it
+
+Game server update, please manually close all CMD pop-up windows

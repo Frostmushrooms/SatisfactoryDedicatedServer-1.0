@@ -1,0 +1,1 @@
+taskkill /IM FactoryServer-Win64-Shipping-Cmd.exe /F && start C:\SatisfactoryDedicatedServer\GameServers\SatisfactoryServer\FactoryServer.exe -log -unattended
