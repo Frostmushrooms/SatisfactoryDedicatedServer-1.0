@@ -1,10 +1,21 @@
-Satisfactory DedicatedServer one-click start (and guard server) code version 1.0
-There is a minor bug
+SatisfactoryDedicatedServer one-click start (and server protection) code version 1.0
+This program comes with monitoring port 7777 to realize the automatic restart function when the server crashes
 
-Put the Satisfactory DedicatedServer folder in the C drive directory
-First start the game download update file.bat
+Put the SatisfactoryDedicatedServer folder in the C drive directory
+First start Game download update file.bat
 After the update is completed, there will be an additional GameServers folder in the folder
-Finally start the one-click start server code.bat
+Finally, start start.bat
 That's it
-
 Game server update, please manually close all CMD pop-ups
+
+
+幸福工厂一键启动（并守护服务器）代码 1.0版
+本程序自带监测7777端口，来实现服务器崩溃时自动重启功能
+
+将SatisfactoryDedicatedServer文件夹放至C盘目录下
+先启动    Game download update file.bat
+待更新完成后文件夹内会多出一个GameServers文件夹
+最后启动   start.bat
+即可
+
+游戏服务器更新，请手动关闭所有CMD弹窗
