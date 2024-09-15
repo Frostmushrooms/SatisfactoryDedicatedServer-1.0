@@ -4,7 +4,7 @@ taskkill /IM FactoryServer-Win64-Shipping-Cmd.exe /F
 setlocal
  
 set PORT=7777
-set APP_PATH=C:\SatisfactoryDedicatedServer\start.bat
+set APP_PATH=SatisfactoryDe​​dicatedServer
  
 :check_port
 set "found="
