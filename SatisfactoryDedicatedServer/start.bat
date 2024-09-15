@@ -1,23 +1,20 @@
 @echo off
-echo start server
+echo 您正在启动幸福工厂服务器 守护模式
+
 taskkill /f /t /im FactoryServer-Win64-Shipping-Cmd.exe
-C:
-cd C:\SatisfactoryDedicatedServer\GameServers\SatisfactoryServer
-start FactoryServer.exe -log -unattended
 
 setlocal
  
 set PORT=7777
-set APP_PATH=C:\SatisfactoryDedicatedServer\启动代码.bat
  
 :check_port
 set "found="
 for /F "tokens=2 delims=:" %%a in ('netstat -a -n -o -p UDP ^| findstr :%PORT%') do set "found=%%a"
 if not defined found (
-    echo Port %PORT% is not in use. Opening %APP_PATH%
-    start "" "%APP_PATH%"
+    echo 幸福工厂服务器已离线  正在重新启动服务器
+    start C:\SatisfactoryDedicatedServer\GameServers\SatisfactoryServer\FactoryServer.exe -log -unattended
 )
  
-echo Port %PORT% is in use.
-timeout /T 30 >nul
+echo 幸福工厂服务器正在工作  冰霜蘑菇QQ:1056484009
+timeout /T 60 >nul
 goto check_port
