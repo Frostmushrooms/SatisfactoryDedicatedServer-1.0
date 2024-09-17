@@ -1,4 +1,4 @@
-# SatisfactoryDedicatedServer-1.0   幸福工厂一键启动（含守护）
+# SatisfactoryDedicatedServer-1.0   
 SatisfactoryDedicatedServer-1.0 Version，One-click start server code
 
 This code is suitable for Windows
