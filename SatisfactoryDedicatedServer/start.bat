@@ -17,6 +17,7 @@ if not defined found (
 taskkill /f /t /im FactoryServer-Win64-Shipping-Cmd.exe & start C:\SatisfactoryDedicatedServer\GameServers\SatisfactoryServer\FactoryServer.exe -log -unattended -port=7777
 )
  
-echo %date%%time% SatisfactoryDedicatedServer is working 幸福工厂服务器正在工作. 冰霜蘑菇 QQ:1056484009 QQ群:264127585
+echo %date%%time% SatisfactoryDedicatedServer is working 
+echo %date%%time%  幸福工厂服务器正在工作. 冰霜蘑菇 QQ:1056484009 QQ群:264127585
 timeout /T 30 >nul
 goto check_port
