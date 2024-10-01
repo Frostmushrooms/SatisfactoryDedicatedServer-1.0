@@ -16,20 +16,13 @@ Finally, start start.bat
 That's it
 
 
-
-
-
-
-### 中英文对照表######Chinese-English comparison table
+### 中英文对照表 ###### Chinese-English comparison table
 
 |中文    |                                           英文                                                                                      |
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |游戏下载更新文件.bat  |Game download update file.bat     |
 |打开存档位置    |[Open archive] SatisfactoryDedicatedServer archive location.cmd                                 |
 |启动脚本|start.bat                                                                                                                                 |
-
-
-
 
 
 # SatisfactoryDe​​dicatedServer-1.0版本，一键启动服务器代码
@@ -39,7 +32,8 @@ That's it
 自1.0发布以来，游戏服务器启动时崩溃，无法自动重启，检测到服务器离线时，UDP端口7777丢失。所以我写了一点代码，监控UDP端口7777是否在线，如果在线，说明服务器正常工作，如果不在线，关闭当前服务器并重新启动。
 检测重启时间30秒
 
-# 使用说明
+
+###### 使用说明 ###### Instructions
 |         步骤step|中文         |                                           英文                                                                                      |
 |--------|------------------------------------------------------------|-----------------------------------------------------------------------------|
 |1 |将SatisfactoryDedicatedServer文件夹放至C盘目录下   |Place the SatisfactoryDedicatedServer folder in the C drive directory|
