@@ -40,12 +40,7 @@ That's it
 检测重启时间30秒
 
 # 使用说明
-
-将SatisfactoryDedicatedServer文件夹放至C盘目录下
-先启动    Game download update file.bat
-待更新完成后文件夹内会多出一个GameServers文件夹
-最后启动   start.bat
-即可
-
-
-
+|1|将SatisfactoryDedicatedServer文件夹放至C盘目录下   |
+|2|先启动    Game download update file.bat          |
+|3|待更新完成后文件夹内会多出一个GameServers文件夹     |
+|4|最后启动   start.bat                              |
