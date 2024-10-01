@@ -15,6 +15,29 @@ After the update is completed, there will be an additional GameServers folder in
 Finally, start start.bat
 That's it
 
+
+
+
+
+
+### 使用须知
+
+|中文    |                                           英文                                                                                      |
+|--------|-----------------------------------------------------------------------------------------------------------------------------------------|
+|游戏下载更新文件.bat  |Game download update file.bat                                                                                                |
+|[打开存档] SatisfactoryDe​​dicatedServer 存档位置    |[Open archive] SatisfactoryDedicatedServer archive location.cmd                                 |
+|启动脚本|start.bat                                                                                                                                 |
+
+对应程序
+
+游戏下载更新文件.bat================      
+[打开存档] SatisfactoryDe​​dicatedServer 存档位置.cmd================[Open archive] SatisfactoryDedicatedServer archive location.cmd
+启动脚本================start.bat
+
+
+
+
+
 # SatisfactoryDe​​dicatedServer-1.0版本，一键启动服务器代码
 
 此代码适用于Windows
@@ -29,3 +52,6 @@ That's it
 待更新完成后文件夹内会多出一个GameServers文件夹
 最后启动   start.bat
 即可
+
+
+
