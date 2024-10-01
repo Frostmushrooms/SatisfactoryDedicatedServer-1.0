@@ -23,8 +23,8 @@ That's it
 ### 中英文对照表######Chinese-English comparison table
 
 |中文    |                                           英文                                                                                      |
-|--------|-----------------------------------------------------------------------------------------------------------------------------------------|
-|游戏下载更新文件.bat  |Game download update file.bat                                                                                                |
+|--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+|游戏下载更新文件.bat  |Game download update file.bat     |
 |打开存档位置    |[Open archive] SatisfactoryDedicatedServer archive location.cmd                                 |
 |启动脚本|start.bat                                                                                                                                 |
 
@@ -40,8 +40,9 @@ That's it
 检测重启时间30秒
 
 # 使用说明
-|1|将SatisfactoryDedicatedServer文件夹放至C盘目录下   |
-|--------|-----------------------------------------------------------------------------------------------------------------------------------------|
-|2|先启动    Game download update file.bat          |
-|3|待更新完成后文件夹内会多出一个GameServers文件夹     |
-|4|最后启动   start.bat                              |
+|         步骤step|中文         |                                           英文                                                                                      |
+|--------|------------------------------------------------------------|-----------------------------------------------------------------------------|
+|1 |将SatisfactoryDedicatedServer文件夹放至C盘目录下   |Place the SatisfactoryDedicatedServer folder in the C drive directory|
+|2 |先启动    Game download update file.bat          |First start Game download update file.bat|
+|3 |待更新完成后文件夹内会多出一个GameServers文件夹     |After the update is completed, there will be an additional GameServers folder in the folder|
+|4 |最后启动   start.bat                              |Finally start start.bat|
