@@ -18,7 +18,7 @@ That's it
 
 ### 中英文对照表 ###### Chinese-English comparison table
 
-|中文    |                                           英文                                                                                      |
+|中文    |                                           English                                                                                      |
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |游戏下载更新文件.bat  |Game download update file.bat     |
 |打开存档位置    |[Open archive] SatisfactoryDedicatedServer archive location.cmd                                 |
@@ -34,7 +34,7 @@ That's it
 
 
 ###### 使用说明 ###### Instructions
-|         步骤step|中文         |                                           英文                                                                                      |
+|         步骤step|中文         |                                           English                                                                                      |
 |--------|------------------------------------------------------------|-----------------------------------------------------------------------------|
 |1 |将SatisfactoryDedicatedServer文件夹放至C盘目录下   |Place the SatisfactoryDedicatedServer folder in the C drive directory|
 |2 |先启动    Game download update file.bat          |First start Game download update file.bat|
