@@ -28,12 +28,6 @@ That's it
 |[打开存档] SatisfactoryDe​​dicatedServer 存档位置    |[Open archive] SatisfactoryDedicatedServer archive location.cmd                                 |
 |启动脚本|start.bat                                                                                                                                 |
 
-对应程序
-
-游戏下载更新文件.bat================      
-[打开存档] SatisfactoryDe​​dicatedServer 存档位置.cmd================[Open archive] SatisfactoryDedicatedServer archive location.cmd
-启动脚本================start.bat
-
 
 
 
