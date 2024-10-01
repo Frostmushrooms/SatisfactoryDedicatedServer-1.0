@@ -41,6 +41,7 @@ That's it
 |3 |待更新完成后文件夹内会多出一个GameServers文件夹     |After the update is completed, there will be an additional GameServers folder in the folder|
 |4 |最后启动   start.bat                              |Finally start start.bat|
 ###### QQ群（群内有服务器）
-|         QQ群         |                                           支持一下                                                                                      |
+|         QQ群         |                                           QQ                                                                                      |
 |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|![qrcode_1727769372302](https://github.com/user-attachments/assets/e1fb0768-9e1d-471a-a590-438aabaecc5c)         |![1727769554065](https://github.com/user-attachments/assets/cf0d2306-492f-40f3-b0a7-0290a99ef1a6) |
+|![qrcode_1727769372302](https://github.com/user-attachments/assets/e1fb0768-9e1d-471a-a590-438aabaecc5c)         |![qrcode_1727770039966](https://github.com/user-attachments/assets/7a199aad-bf9c-4996-aee4-758306e4e33b)
+ |
