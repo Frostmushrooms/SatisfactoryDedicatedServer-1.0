@@ -22,7 +22,7 @@ Enjoy your game!
 | 中文 | English |
 |:---:|:---:|
 | 游戏下载更新文件.bat | server update.bat |
-| 打开存档位置 | [Open archive] SatisfactoryDedicatedServer archive location.cmd |
+| 打开存档位置 | Open saves folder.bat |
 | 启动脚本| start.bat |
 
 # SatisfactoryDe​​dicatedServer，一键启动服务器代码
@@ -45,8 +45,8 @@ Enjoy your game!
 
 点击加入[【幸福工厂/异星工厂建造群】](https://qm.qq.com/q/8fPrHJ44G4)
 
-## 维护者 QQ
+## 维护者联系方式 Maintainer contact information
 
-[冰霜蘑菇](https://wpa.qq.com/msgrd?v=3&uin=1056484009&site=qq&menu=yes)
+冰霜蘑菇 [QQ](https://wpa.qq.com/msgrd?v=3&uin=1056484009&site=qq&menu=yes) Simple Chinese Only
 
-[武乙凌薇](https://wpa.qq.com/msgrd?v=3&uin=2037466993&site=qq&menu=yes)
+武乙凌薇 [QQ](https://wpa.qq.com/msgrd?v=3&uin=2037466993&site=qq&menu=yes) [Telegram](https://t.me/WuYilingwei) Simple Chinese / English
