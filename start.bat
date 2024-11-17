@@ -15,6 +15,7 @@ exit /B
 :start
 
 title FactoryServerDaemon
+color AF
 echo You are starting the SatisfactoryDedicatedServer in daemon mode
 echo Please do not close this window
 echo QQ:1056484009 QQgroup:264127585
