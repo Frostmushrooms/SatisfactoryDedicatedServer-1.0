@@ -43,7 +43,7 @@ Enjoy your game!
 
 ## QQ群（群内有服务器）
 
-点击加入(【幸福工厂/异星工厂建造群】)[https://qm.qq.com/q/8fPrHJ44G4]
+点击加入[【幸福工厂/异星工厂建造群】](https://qm.qq.com/q/8fPrHJ44G4)
 
 ## 维护者 QQ
 
