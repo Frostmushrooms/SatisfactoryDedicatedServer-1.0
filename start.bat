@@ -27,7 +27,11 @@ setlocal
 set PORT=7777
 
 mkdir "%~dp0logs" >nul 2>nul
-set log_file="%~dp0/logs/%date:~0,11%%time%.log"
+
+set hour=%time:~0,2%
+if "%hour:~0,1%" == " " set hour=0%hour:~1,1%
+
+set log_file=%~dp0logs\%date:~0,4%%date:~5,2%%date:~8,2%_%hour%%time:~3,2%%time:~6,2%.log
 echo %date:~0,11%%time% Satisfactory Server Daemon Started >> %log_file%
 echo %date:~0,11%%time% Satisfactory Server Daemon Started
 
