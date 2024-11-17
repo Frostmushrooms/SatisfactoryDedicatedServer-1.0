@@ -1,1 +1,1 @@
-start "Satisfactory Server" "%~dp0ServerCore\FactoryServer.exe" -log -unattended -port=7777
+start "Satisfactory Server" "%~dp0servercore\FactoryServer.exe" -log -unattended -port=7777

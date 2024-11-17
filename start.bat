@@ -42,7 +42,7 @@ for /f "tokens=*" %%i in ('netstat -a -b -n -o -p UDP ^| findstr "FactoryServer-
 if !found! == 0 (
     echo %date:~0,11%%time% Satisfactory Server Error
     taskkill /f /t /im FactoryServer-Win64-Shipping-Cmd.exe
-    start "" "%~dp0ServerCore\FactoryServer.exe" -log -unattended -port=7777
+    explorer "%~dp0demotion.bat"
 )
 
 echo %date:~0,11%%time% SatisfactoryDedicatedServer is working.
