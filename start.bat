@@ -17,14 +17,19 @@ exit /B
 
 title FactoryServerDaemon
 echo You are starting the SatisfactoryDedicatedServer in daemon mode
-
+echo Please do not close this window
 echo QQ:1056484009 QQgroup:264127585
 
-taskkill /f /t /im FactoryServer-Win64-Shipping-Cmd.exe >nul
+taskkill /f /t /im FactoryServer-Win64-Shipping-Cmd.exe >nul 2>nul
 
 setlocal
 
 set PORT=7777
+
+mkdir "%~dp0logs" >nul 2>nul
+set log_file="%~dp0/logs/%date:~0,11%%time%.log"
+echo %date:~0,11%%time% Satisfactory Server Daemon Started >> %log_file%
+echo %date:~0,11%%time% Satisfactory Server Daemon Started
 
 :check_port
 set found=0
@@ -40,11 +45,14 @@ for /f "tokens=*" %%i in ('netstat -a -b -n -o -p UDP ^| findstr "FactoryServer-
 
 :break
 if !found! == 0 (
-    echo %date:~0,11%%time% Satisfactory Server Error
-    taskkill /f /t /im FactoryServer-Win64-Shipping-Cmd.exe
+    taskkill /f /t /im FactoryServer-Win64-Shipping-Cmd.exe >nul
+    echo %date:~0,11%%time% Satisfactory Server Error, restarting >> %log_file%
+    echo %date:~0,11%%time% Satisfactory Server Error, restarting
+    powershell -Command "& { [Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] > $null; $template = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent([Windows.UI.Notifications.ToastTemplateType]::ToastText02); $xml = New-Object Windows.Data.Xml.Dom.XmlDocument; $xml.LoadXml($template.GetXml()); $toastElements = $xml.GetElementsByTagName('text'); if ($toastElements.Count -ge 2) { $titleNode = $xml.CreateTextNode('Satisfactory Server Error'); $toastElements.Item(0).AppendChild($titleNode) > $null; $contentNode = $xml.CreateTextNode('Detected UDP port %port% closed, restarting server.'); $toastElements.Item(1).AppendChild($contentNode) > $null; $toast = [Windows.UI.Notifications.ToastNotification]::new($xml); $notifier = [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier('Satisfactory Dedicated Server'); $notifier.Show($toast); } else { Write-Host 'Unable to create toast notification.' } }" >nul 2>nul
     explorer "%~dp0demotion.bat"
 )
 
 echo %date:~0,11%%time% SatisfactoryDedicatedServer is working.
+echo %date:~0,11%%time% SatisfactoryDedicatedServer is working.>> %log_file%
 timeout /T 30 >nul
 goto check_port
