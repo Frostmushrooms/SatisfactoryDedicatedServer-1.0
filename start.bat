@@ -1,6 +1,5 @@
 @echo off
 setlocal enabledelayedexpansion
-:: BatchGotAdmin
 title checking for admin rights
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 if '%errorlevel%' NEQ '0' (
@@ -37,42 +36,32 @@ echo %date:~0,11%%time% Satisfactory Server Daemon Started
 set tempFile="%~dp0netstat.tmp"
 
 :check_port
-REM 等待 30 秒后检查端口状态
 timeout /T 30 >nul
 
-REM 初始化检测标志
 set processLine=0
 set found=0
 
-REM 捕获当前的 netstat 输出到临时文件
 echo [netstat UDP] %date:~0,11%%time%> "%tempFile%"
 netstat -a -b -n -o -p UDP >> "%tempFile%"
 
-REM 遍历 netstat 输出逐行检查
 for /f "usebackq tokens=*" %%i in (%tempFile%) do (
-    REM 检查当前行是否为目标进程
     echo %%i | findstr /i "FactoryServer-Win64-Shipping-Cmd.exe" >nul
     if !errorlevel! equ 0 (
-        REM 找到目标进程，设置 processLine 标志
         set processLine=1
     ) else (
-        REM 检查端口是否紧随目标进程之后
         if !processLine! equ 1 (
             echo %%i | findstr /i "0.0.0.0:%PORT%" >nul
             if !errorlevel! equ 0 (
-                REM 找到目标端口，设置 found 为 1
                 set found=1
                 goto :break
             )
         )
-        REM 如果不是目标端口，重置 processLine 状态
         set processLine=0
     )
 )
 
 :break
 if !found! == 0 (
-    REM 未找到目标端口，重新启动服务器
     taskkill /f /t /im FactoryServer-Win64-Shipping-Cmd.exe >nul
     echo %date:~0,11%%time% Satisfactory Server Error, restarting >> %log_file%
     echo %date:~0,11%%time% Satisfactory Server Error, restarting
@@ -80,7 +69,6 @@ if !found! == 0 (
     timeout /T 5 >nul
     explorer "%~dp0demotion.bat"
 ) else (
-    REM 找到目标端口，服务器运行正常
     echo %date:~0,11%%time% Satisfactory Server is working.
     echo %date:~0,11%%time% Satisfactory Server is working.>> %log_file%
 )
